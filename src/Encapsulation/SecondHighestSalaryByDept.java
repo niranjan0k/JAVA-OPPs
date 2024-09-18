@@ -1,18 +1,26 @@
 package Encapsulation;
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
 
-class Employee{
+import java.util.Optional;
+import java.util.stream.Collectors;
+import java.util.Comparator;
+import java.util.HashMap;
+
+class Employee {
     private String name;
     private double salary;
     private String department;
     
-    public Employee(String name, double salary, String department){
+
+    public Employee(String name, double salary, String department) {
         this.name = name;
         this.salary = salary;
         this.department = department;
     }
+    
     
     public String getName(){
         return name;
@@ -35,12 +43,10 @@ class Employee{
     }
 }
 
-
-
-// "static void main" must be defined in a public class.
 public class SecondHighestSalaryByDept {
     public static void main(String[] args) {
         List<Employee> employees = Arrays.asList(
+            new Employee("Pooja", 30000, "BD"),
             new Employee("Niranjan", 30000, "IT"),
             new Employee("Gautam", 31000, "IT"),
             new Employee("Sandeep", 29000, "HR"),
@@ -70,4 +76,3 @@ public class SecondHighestSalaryByDept {
         });
     }
 }
-

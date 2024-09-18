@@ -1,13 +1,13 @@
 package Encapsulation;
 
 // Encapsulated class with private data members
-class Employee {
+class EmployeeTest {
     private String name;
     private int age;
     private double salary;
 
     // Constructor to initialize Employee object
-    public Employee(String name, int age, double salary){
+    public EmployeeTest(String name, int age, double salary){
         this.name = name;
         this.age = age;
         this.salary = salary;
@@ -47,7 +47,7 @@ class Employee {
 public class Main {
     public static void main(String[] args) {
         // Creating an object of Employee class
-        Employee emp = new Employee("John", 30, 50000);
+        EmployeeTest emp = new EmployeeTest("John", 30, 50000);
 
         // Accessing the Employee's details using getter methods
         System.out.println("Name: " + emp.getName());
